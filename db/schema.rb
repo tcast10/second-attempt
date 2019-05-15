@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2019_05_15_143641) do
   enable_extension "plpgsql"
 
   create_table "places", force: :cascade do |t|
-    t.string "nmae"
+    t.string "name"
     t.text "description"
     t.string "address"
     t.datetime "created_at", null: false
