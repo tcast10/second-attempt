@@ -1,5 +1,3 @@
-ActionMailer::Base.default_url_options = { :host => "localhost:3030" }
-
 # frozen_string_literal: true
 
 # Use this hook to configure devise mailer, warden hooks and so forth.
@@ -10,7 +8,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'd0554dbb98be1a94e20ea826cf3a5619dda4b25b1cff163765983a087753500c9135936876b17d8406aaacbdb9971810cd0487587273b0c99c96b1f5a1f95c09'
+  # config.secret_key = '876f6ca15826c4d534666cd9f7aa1b01551c09214e2ced157bbf4efa4bc194132140314624a52a9b697bec7ffc860a5d7d9c18837ceb3fc2f3ed9224666adc08'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -116,7 +114,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'ae003c6466bf2a7ff204aa73e2f251595b1fc186e793e68679e00928cd892d36c8e96f249cfb36670bb5bd8aaaaddda9b2d66d36ea5cd4b60c8a3a562a43ff32'
+  # config.pepper = 'f265d1493bb1f97b432059f4ef0eb889e440db9b80c6c120be6c088a134720f7813b9cbf3f84f75689ba25841ee01ce545597bc0eaaa2f7c21d150143afce366'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
