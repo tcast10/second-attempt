@@ -4,6 +4,13 @@
   <br /><br />
   <p><%= @place.description %></p>
 
+
+  <%= simple_form_for @photo, url: photos_path(@place) do |f| %>
+  <%= f.input :caption %>
+  <%= f.input :picture %>
+  <%= f.submit "Upload a Photo", class: 'btn btn-primary' %>
+<% end %>
+
 <% if @place.latitude.present? && @place.longitude.present? %>
 
   <script>
