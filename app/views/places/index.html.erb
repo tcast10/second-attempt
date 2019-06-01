@@ -52,6 +52,19 @@
     </div>
   <% end%>
 
+
+
+  <% if place.photos.last %>
+    <div class="photo">
+      <%= image_tag place.photos.last.picture.url %>
+    </div>
+    <div class="photo-caption">
+      <%= place.photos.last.caption %>
+    </div>
+  <% end %>
+
+
+
   <hr />
 <% end %>
 

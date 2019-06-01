@@ -3,9 +3,8 @@ Rails.application.routes.draw do
   root 'places#index'
   resources :places do
     resources :comments, only: :create
+    resources :photos
   end
-   resources :photos do
-    resources :caption, only: :create
-  end
+  
   resources :users, only: :show
 end

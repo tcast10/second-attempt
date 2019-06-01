@@ -28,10 +28,13 @@ ActiveRecord::Schema.define(version: 2019_05_26_153000) do
 
   create_table "photos", force: :cascade do |t|
     t.text "caption"
+    t.integer "user_id"
     t.integer "place_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "picture"
+    t.index ["place_id"], name: "index_photos_on_place_id"
+    t.index ["user_id", "place_id"], name: "index_photos_on_user_id_and_place_id"
   end
 
   create_table "places", force: :cascade do |t|
