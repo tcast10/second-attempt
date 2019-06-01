@@ -4,9 +4,9 @@
   <br /><br />
   <p><%= @place.description %></p>
 
-<div class="row col-10 offset-1">
+
   <% @place.photos.each do |photo| %>
-    <div class="row col-10 offset1">
+    <div class="photo">
       <%= image_tag photo.picture.url %>
     </div>
     <div class="photo-caption">
